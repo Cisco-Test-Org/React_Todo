@@ -1,13 +1,23 @@
 import './App.css';
-import Form from './components/Form';
-import TodoList from './components/TodoList';
 
 function App() {
   return (
     <div className="App">
       <h1>My to-do List</h1>
-      <Form />
-      <TodoList />
+      <div>
+            <form>
+                <input type='text' required id='todo-item'/>
+                <button>Add To List</button>
+            </form>
+        </div>
+      <div className='list'>
+            <ol>
+                <li>todo item one</li>
+                <li>todo item two</li>
+                <li>todo item three</li>
+                <li>todo item four</li>
+            </ol>
+        </div>
     </div>
   );
 }
